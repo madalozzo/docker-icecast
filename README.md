@@ -47,7 +47,7 @@ services:
     restart: unless-stopped
     user: "1000:1000"
     volumes:
-    #  - ./config:/config
+      - ./config:/config
       - /etc/localtime:/etc/localtime:ro
     environments:
         - HOME=/config
