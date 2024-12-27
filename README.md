@@ -1,5 +1,11 @@
 # Icecast with SSL
 
+
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/madalozzo/docker-icecast/ci.yml)
+[![DockerHub](https://img.shields.io/badge/Dockerhub-madalozzo/icecast2-blue?logo=docker&style=flat)](https://hub.docker.com/r/madalozzo/icecast2)
+[![Docker Pulls](https://img.shields.io/docker/pulls/madalozzo/icecast2)](https://hub.docker.com/r/madalozzo/icecast2)
+[![Docker Image Size](https://img.shields.io/docker/image-size/madalozzo/icecast2)](https://hub.docker.com/r/madalozzo/icecast2)
+
 This repository contains scripts and configurations for managing SSL/TLS certificates and deploying an Icecast server using Docker.
 
 ## Usage
@@ -47,3 +53,5 @@ docker compose up -d
 - Open your browser and go to `https://your-domain.com:8443` to access the Icecast server.
 - Use the `source` password to connect your streaming software to the Icecast server.
 
+# License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
