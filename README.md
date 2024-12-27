@@ -40,21 +40,10 @@ Add the following line to your crontab to renew the certificates automatically:
 
 ## Start the Icecast server:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ## Access the Icecast server:
 - Open your browser and go to `https://your-domain.com:8443` to access the Icecast server.
 - Use the `source` password to connect your streaming software to the Icecast server.
-
-
-## Files
-
-### `create-certs.sh`
-A Bash script to generate SSL/TLS certificates for the Icecast server. You need to confi
-
-#### Features:
-- Automates certificate generation with Certbot.
-- Configures permissions for certificate files.
-- Combines certificate and private key into a single file (`icecast.pem`) for Icecast usage.
 
