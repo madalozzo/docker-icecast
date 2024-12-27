@@ -1,0 +1,9 @@
+services:
+  nginx:
+    image: madalozzo/icecast2
+    restart: always
+    network_mode: "host"   
+    container_name: "icecast2"
+    volumes:
+      - './icecast.xml:/etc/icecast2/icecast.xml:ro'
+      - './icecast.pem:/usr/share/icecast2/icecast.pem:ro'
