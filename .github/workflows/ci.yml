@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Cria imagens e faz deploy HML
+    name: Create docker image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do repo git
@@ -34,7 +34,7 @@ jobs:
 
       - name: Build Release
         uses: docker/build-push-action@v6
-        if: github.ref == 'refs/heads/main'
+        if: github.event_name == 'release'
         with:
           context: .
           file: Dockerfile
