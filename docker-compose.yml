@@ -1,5 +1,5 @@
 services:
-  nginx:
+  icecast:
     image: madalozzo/icecast2
     restart: always
     network_mode: "host"   
