@@ -6,4 +6,4 @@ services:
     container_name: "icecast2"
     volumes:
       - './icecast.xml:/etc/icecast2/icecast.xml:ro'
-      - './icecast.pem:/usr/share/icecast2/icecast.pem:ro'
+      - './cert.pem:/usr/share/icecast2/icecast.pem:ro'

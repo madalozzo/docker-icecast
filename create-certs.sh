@@ -14,6 +14,9 @@ docker run --rm --name certbot -p 80:80 -v "/home/ubuntu/icecast/certs:/etc/lets
 
 sudo chmod -R 755 /home/ubuntu/icecast/certs/
 
-cat certs/live/yourdomain.com/fullchain.pem certs/live/yourdomain.com/privkey.pem > icecast.pem
-chmod 666 icecast.pem
+cat certs/live/$DOMAIN/fullchain.pem certs/live/$DOMAIN/privkey.pem > cert.pem
+chmod 666 cert.pem
 
+cd /home/ubuntu/icecast/
+docker compose down
+docker compose up -d
